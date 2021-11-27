@@ -54,8 +54,12 @@ test:
 
 .PHONY: check
 check:
+	@echo "textlint実行（$(file)）"
 	@docker run --rm -v $(PWD):/work $(REGISTRY)/$(USER)/$(NAME):$(IMAGE_VERSION) textlint $(file)
+	@echo "check完了"
 
 .PHONY: fix
 fix:
+	@echo "fix実施"
 	@docker run --rm -v $(PWD):/work $(REGISTRY)/$(USER)/$(NAME):$(IMAGE_VERSION) textlint --fix $(file)
+	@echo "fix完了"

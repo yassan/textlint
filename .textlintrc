@@ -23,6 +23,8 @@
           }
         }
       },
+      // 感嘆符!！、感嘆符?？はOKにする
+      "no-exclamation-question-mark": false,
       // 1文の長さは100文字以下とする
       "sentence-length": {
         "max": 100,

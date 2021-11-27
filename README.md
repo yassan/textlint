@@ -23,4 +23,4 @@ textlintによる修復を実行したい場合は、以下のコマンドを実
 [Run on Save - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave) をインストールした場合、Markdownファイル（`*.md`）を保存した場合に自動実行する。
 
 確認は、「出力」→「Run On Save」を選択すると確認できる。
-![](doc\output.png)
+![](./doc/output.png)

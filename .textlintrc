@@ -1,0 +1,65 @@
+{
+  "filters": {},
+  "rules": {
+    "no-dropping-the-ra": true,
+    "no-nfd": true,
+    "@textlint-rule/no-invalid-control-character": true,
+    "no-zero-width-spaces": true,
+    "no-kangxi-radicals": true,
+    "no-double-negative-ja": true,
+    "ja-no-abusage": true,
+    "ja-unnatural-alphabet": true,
+    // 箇条書きには。を付けない
+    "period-in-list-item": {
+      "periodMark": ""
+    },
+    "preset-ja-technical-writing": {
+      "ja-no-redundant-expression": {
+        "dictOptions": {
+          // "すること[助詞]できる"
+          // https://github.com/textlint-ja/textlint-rule-ja-no-redundant-expression#dict2
+          "dict2": {
+            "disabled": true
+          }
+        }
+      },
+      // 1文の長さは100文字以下とする
+      "sentence-length": {
+        "max": 100,
+        "exclusionPatterns": [
+          // 文末の（...）。はカウントしない
+          "/（.*?）。$/"
+        ]
+      },
+      // カンマは1文中に3つまで
+      "max-comma": {
+        max: 3
+      },
+      // 「ですます調」、「である調」を統一します
+      "no-mix-dearu-desumasu": {
+        "preferInHeader": "",
+        "preferInBody": "ですます",
+        "preferInList": "である",
+        "strict": true
+      },
+      // 文末の句点記号として「。」を使います
+      "ja-no-mixed-period": {
+        "periodMark": "。"
+      },
+      // 二重否定は使用しない
+      "no-double-negative-ja": true,
+      // 逆接の接続助詞「が」を連続して使用しない
+      "no-doubled-conjunctive-particle-ga": true,
+      // 弱い日本語表現の利用を使用しない
+      "ja-no-weak-phrase": true,
+      // よくある日本語の誤用をチェックする
+      "ja-no-abusage": true,
+      // 冗長な表現をチェックする
+      "ja-no-redundant-expression": true,
+      // 入力ミスで発生する不自然なアルファベットをチェックする
+      "ja-unnatural-alphabet": true,
+      // 対になっていない括弧をチェックする
+      "no-unmatched-pair": true
+    }
+  }
+}

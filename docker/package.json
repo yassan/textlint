@@ -1,5 +1,5 @@
 {
-  "name": "ma_jp_lint",
+  "name": "yassan_lint",
   "version": "1.0.0",
   "dependencies": {
     "textlint": "^12.0.2",
@@ -7,6 +7,7 @@
     "textlint-rule-preset-ja-spacing": "^2.2.0",
     "textlint-rule-preset-ja-technical-writing": "^7.0.0",
     "textlint-rule-preset-japanese": "^7.0.0",
-    "textlint-rule-period-in-list-item": "^0.3.2"
+    "textlint-rule-period-in-list-item": "^0.3.2",
+    "textlint-rule-preset-jtf-style": "^2.3.12"
   }
 }

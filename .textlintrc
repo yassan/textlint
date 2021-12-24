@@ -13,6 +13,8 @@
     "period-in-list-item": {
       "periodMark": ""
     },
+    // JTF日本語標準スタイルガイド
+    "preset-jtf-style": true,
     "preset-ja-technical-writing": {
       "ja-no-redundant-expression": {
         "dictOptions": {
